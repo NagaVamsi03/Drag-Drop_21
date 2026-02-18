@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop File Uploader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>File Uploader</h1>
+        
+        <div class="drop-zone" id="dropZone">
+            <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
+            </svg>
+            <h2>Drag & Drop Files Here</h2>
+            <p>or click to browse</p>
+            <input type="file" id="fileInput" multiple accept="image/*,.pdf,.doc,.docx,.txt" hidden>
+        </div>
+
+        <div class="file-list" id="fileList"></div>
+
+        <button class="upload-btn" id="uploadBtn" style="display:none;">Upload Files</button>
+    </div>
+
+    <div class="notification" id="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
